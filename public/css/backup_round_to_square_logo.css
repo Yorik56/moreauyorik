@@ -1,0 +1,123 @@
+/* Logo */
+
+.box:hover{
+    border-radius: 0%;
+    border: 0px black solid;
+    width: 150px;
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+    transform: rotate(360deg);
+  }
+  
+  .box::before {
+    background-color: transparent;
+    border-radius: 50%;
+    width: 143px;
+    height: 150px;
+    border: solid #2D6BCE;
+    border-width: 75px 0px 0px 0px;
+    left: 3px;
+    top: 3px;
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 0;
+  }
+  
+  .box:hover .content::before {
+    background: #2D6BCE;
+    border-radius: 50%;
+    border-color: #2D6BCE !important;
+    display: block;
+    position: absolute;
+    z-index: 0;
+    left: 6px;
+    bottom: -85px;
+    border: solid 11px;
+    text-align: center;
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+  }
+  .box:hover .content::after {
+    background: black;
+    border-radius: 50%;
+    border-color: black !important;
+    display: block;
+    position: absolute;
+    z-index: 0;
+    left: 71px;
+    top: 66px;
+    border: solid 10px;
+    text-align: center;
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+  }
+  
+  .box {
+    border-radius: 50%;
+    position: relative;
+    width: 150px; height: 150px;
+    background-color: black;
+    color: white;
+    text-align: right;
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+  }
+  
+  .box:hover::before {
+    border-radius: 0%;
+    left: 3px;
+    top: 3px;
+    width: 0;
+    height: 0;
+    border: 71px solid black;
+    border-top-color: #2D6BCE;
+    border-left-color: #2D6BCE;
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+  }
+  
+  .content::before {
+    content: url("../images/m.png");
+    display: block;
+    position: absolute;
+    z-index: 0;
+    font-size: 46%;
+    width: 72px;
+    background: #2D6BCE;
+    border-radius: 50%;
+    border-color: #2D6BCE !important;
+    left: 3px;
+    bottom: -109px;
+    border: solid 11px;
+    text-align: center;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+  }
+  
+  .content::after {
+    content: url("../images/y.png");
+    display: block;
+    position: absolute;
+    top: 78px;
+    font-size: 22%;
+    width: 72px;
+  
+    background: black;
+    border-radius: 50%;
+    border-color: black !important;
+    left: 75px;
+    top: 47px;
+    border: solid 10px;
+    text-align: center;
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+  }
+  

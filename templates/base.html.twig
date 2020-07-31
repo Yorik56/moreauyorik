@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mon portefolio de développeur web et webmobile en freelance. Créations de sites vitrines, blogs , e-commerces, sur mesure ( Wordpress et Symfony ). Donnez vie à vos projets ! .">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% block title %}MoreauYorik - Développeur Web et Webmoile Freelance.{% endblock %}</title>
+
+
+    {% block stylesheets %}
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;700;800;900&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href={{ asset("css/bootstrap.min.css") }}>
+        <link rel="stylesheet" href={{ asset("css/style.css") }}>    
+    {% endblock %}
+</head>
+
+
+<body>
+    
+    {% block header %}
+
+        <div class="nav-wrapper">
+            <div class="grad-bar"></div>
+                <nav class="navbar mobile">
+                    <div class="menu-toggle" id="mobile-menu">
+                        <div id="button_toggle_menu">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                    <div class="title-mobile"><h1>Accueil</h1></div>
+                    <div class="title-list">
+                        <ul class="nav no-search">
+                            <li class="large_view_item" data-target="#carouselExampleIndicators"></li>
+                            <li class="nav-item" data-target="#carouselExampleIndicators" data-slide-to="0"><img class="icone icone-active" id="icone_accueil" src="images/home.png" alt="accueil"></li>
+                            <li class="nav-item" data-target="#carouselExampleIndicators" data-slide-to="1"><img class="icone" id="icone_réalisations" src="images/eye.png" alt="réalisations"></li>
+                            <li class="nav-item" data-target="#carouselExampleIndicators" data-slide-to="2"><img class="icone" id="icone_compétences" src="images/compétences.png" alt="compétences"></li>
+                            <li class="nav-item" data-target="#carouselExampleIndicators" data-slide-to="3"><img class="icone" id="icone_contact" src="images/contact.png" alt="contact"></li>
+                            <li class="large_view_item" data-target="#carouselExampleIndicators"></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        {% endblock %}
+    {% block body %}{% endblock %}
+    {% block javascripts %}
+        
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- Bootstrap -->
+        <script src={{ asset('js/bootstrap/bootstrap.js') }}></script>
+        <!-- jQuery 2.2.4 -->
+        <script src={{ asset('js/jquery.min.js') }}></script>
+        <script src={{ asset('js/js-index.js') }}></script>
+    {% endblock %}
+</body>
+
+<footer>
+    {% block footer %}
+    {% endblock %}
+</footer>
+
+</html>
